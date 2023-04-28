@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Black.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    
+    font-family:'Gotham-Book', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+
+body{
+    background-image: url("../img/minha9.JPG");
+    background-size: auto 1200px;
+    background-repeat: no-repeat;
+}
+
+nav {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav li {
+    border-radius: 5px;
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+
+nav li:not(:first-child):not(.login-raquel):hover {
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+nav li:not(.search):hover {
+    transform: scale(1.15);
+    
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+.search {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.search:hover{
+    background-color: rgba(245, 245, 245, 0.1);
+    
+}
+
+input[type="text"] {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.img-rachel-flix:hover{
+    transform: scale(1.15);
+}
+
+.nome-esquerda{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 150px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.nome-esquerda h1 { 
+    line-height: 1.3; 
+}
+.nome-esquerda h5 {
+    line-height: 0;
+}
+
+.btn-assistir {
+    margin-top: 100px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.btn-assistir:hover {
+    background-color: #ff0a16;
+    box-shadow: 0 0 10px #ff515a;
+}
+
+
+
+
+
+.conteudo{
+    background-color: #141414;
+    color: #fff;
+    height: max-content;
+    margin-top: 50px;
+    padding: 25px 0px 65px;
+}
+
+.conteudo h2{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+}
+
+.contents img{
+    border-radius: 10px;
+}
+
+.contents ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.contents li{
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: all 0.5s;
+}
+.contents li:hover{
+    transform: scale(1.15);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.overlay-a-1, .overlay-a-2, .overlay-a-3, .overlay-a-4, .overlay-a-5, .overlay-a-6, .overlay-a-7, .overlay-a-8, .overlay-a-9, .overlay-a-10 {
+    opacity: 0;
+    position:absolute;
+}
+
+.overlay-an-1, .overlay-an-2, .overlay-an-3, .overlay-an-4, .overlay-an-5, .overlay-an-6, .overlay-an-7, .overlay-an-8, .overlay-an-9, .overlay-an-10 {
+    opacity: 0;
+    position:absolute;
+}
+
+
+
+
+
+
+
+
+footer{
+    height: max-content;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #141414;
+    color: #fff;
+    
+}
+.footer-texto a{
+    text-decoration: none;
+    color: #e50914;
+}
+
+#options {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    margin-right: 17px;
+    background-color: #e50914;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: all 1s;
+}
+  
+#options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+  
+#options ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+  
+#options ul li:hover {
+    background-color: #ff0a16;
+    box-shadow: 0 0 10px #ff515a;
+}
+
+#options a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#meuVideo {
+    width: 100%;
+    
+  }

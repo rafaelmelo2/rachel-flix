@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/LOGO R.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style-perfil-raquel.css">
+</head>
+<body>
+    <header onclick="fecharVideo()">
+        <div id="options" style="display: none;">
+            <ul>
+                <li><a href="../index.html">Sair</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li class="img-rachel-flix"><a href=""><img src="../img/LOGO rachel-flix-reto.png" alt="" width="300px"></a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li class="search"><input type="text" placeholder="Pesquisar..."></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li class="login-raquel" onclick="openOptions()"><a href="#" ><img src="../img/ela2.png" alt="" width="50px" height="50px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <video id="meuVideo" style="display: none;" controls>
+        <source src="../video/video.mp4" type="video/mp4">
+    </video>
+
+    
+    <main onclick="closeOptions()">
+        <div class="nome-esquerda">
+            <h1>MINHA MELHOR <br> AMIGA E<br> COMPANHEIRA</h1>
+            <h5>É com ela em que encontro todos meus sorrisos</h5>    
+            <button class="btn-assistir" onclick="reproduzirVideo()">Assistir</button>
+        </div>
+        <div class="conteudo" onclick="fecharVideo()">
+            <div class="conteudo-em-alta">
+                <h2>Primeiros da fila</h2>
+                <div class="contents">
+                    <ul>
+                        <li class="content-a-1" onmouseover="addOverlay('.content-a-1', '.overlay-a-1')"><img src="../img/primeira_conversa.png" alt="" width="160px" height="160px"><div class="overlay-a-1">
+                            <p>Nossa primeira conversa <br>17/08/2021 - 22:02</p>
+                        </div></a></li>
+                        <li class="content-a-2" onmouseover="addOverlay('.content-a-2', '.overlay-a-2')"><img src="../img/primeiro_encontro.png" alt="" width="160px" height="160px"><div class="overlay-a-2">
+                            <p>Nosso primeiro encontro, primeiro abraço, primeiro beijo... <br>25/12/2021 </p>
+                        </div></a></li>
+                        <li class="content-a-3" onmouseover="addOverlay('.content-a-3', '.overlay-a-3')"><img src="../img/primeira_foto.png" alt="" width="160px" height="160px"><div class="overlay-a-3">
+                            <p>Nossa primeira fotinha <br>26/12/2021 - 10:30 </p>
+                        </div></a></li>
+                        <li class="content-a-4" onmouseover="addOverlay('.content-a-4', '.overlay-a-4')"><img src="../img/primeiro_perrengue.png" alt="" width="160px" height="160px"><div class="overlay-a-4">
+                            <p>Nosso primeiro perrengue <br>28/12/2021 - 00:34 </p>
+                        </div></a></li>
+                        <li class="content-a-5" onmouseover="addOverlay('.content-a-5', '.overlay-a-5')"><img src="../img/primeiro_reveillon.png" alt="" width="160px" height="160px"><div class="overlay-a-5">
+                            <p>Nosso primeiro reveillón <br>01/01/2022 - 00:05 </p>
+                        </div></a></li>
+                        <li class="content-a-6" onmouseover="addOverlay('.content-a-6', '.overlay-a-6')"><img src="../img/primeira_prainha.png" alt="" width="160px" height="160px"><div class="overlay-a-6">
+                            <p>Nossa primeira prainha <br>07/01/2022 - 13:43 </p>
+                        </div></a></li>
+                        <li class="content-a-7" onmouseover="addOverlay('.content-a-7', '.overlay-a-7')"><img src="../img/primeira_visita.png" alt="" width="160px" height="160px"><div class="overlay-a-7">
+                            <p>Primeira visita em minha casa<br>25/02/2022 - 14:25 </p>
+                        </div></a></li>
+                        <li class="content-a-8" onmouseover="addOverlay('.content-a-8', '.overlay-a-8')"><img src="../img/primeiro_carnaval.png" alt="" width="160px" height="160px"><div class="overlay-a-8">
+                            <p>Nosso primeiro carnaval juntos <br>27/02/2022 - 18:23 </p>
+                        </div></a></li>
+                        <li class="content-a-9" onmouseover="addOverlay('.content-a-9', '.overlay-a-9')"><img src="../img/nosso_dia.png" alt="" width="160px" height="160px"><div class="overlay-a-9">
+                            <p>Nosso dia <br>28/02/2022</p>
+                        </div></a></li>
+                        <li class="content-a-10" onmouseover="addOverlay('.content-a-10', '.overlay-a-10')"><img src="../img/primeiro_dia_namorados.png" alt="" width="160px" height="160px"><div class="overlay-a-10">
+                            <p>Nosso dia dos namorados <br>12/06/2022</p>
+                        </div></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="conteudo-assistir-novamente">
+                <h2>Assistir novamente</h2>
+                <div class="contents">
+                    <ul>
+                        <li class="content-an-1" onmouseover="addOverlay('.content-an-1', '.overlay-an-1')"><img src="../img/primeiro_aniversario.png" alt="" width="160px" height="160px"><div class="overlay-an-1">
+                            <p>Seu primeiro aniversário ao meu lado </p>
+                        </div></a></li>
+                        <li class="content-an-2" onmouseover="addOverlay('.content-an-2', '.overlay-an-2')"><img src="../img/primeiro_aniversario2.png" alt="" width="160px" height="160px"><div class="overlay-an-2">
+                            <p>Meu primeiro aniversário ao seu lado </p>
+                        </div></a></li>
+                        <li class="content-an-3" onmouseover="addOverlay('.content-an-3', '.overlay-an-3')"><img src="../img/viagem_marcante.png" alt="" width="160px" height="160px"><div class="overlay-an-3">
+                            <p>Nossa viagem ao beto carreiro </p>
+                        </div></a></li>
+                        <li class="content-an-4" onmouseover="addOverlay('.content-an-4', '.overlay-an-4')"><img src="../img/cachoeira.png" alt="" width="160px" height="160px"><div class="overlay-an-4">
+                            <p>Passeio na cachoeira <br>05/03/2022 </p>
+                        </div></a></li>
+                        <li class="content-an-5" onmouseover="addOverlay('.content-an-5', '.overlay-an-5')"><img src="../img/momentos1.png" alt="" width="160px" height="160px"><div class="overlay-an-5">
+                            <p>Momento que tirei para dizer o quanto eu te amo </p>
+                        </div></a></li>
+                        <li class="content-an-6" onmouseover="addOverlay('.content-an-6', '.overlay-an-6')"><img src="../img/momentos2.png" alt="" width="160px" height="160px"><div class="overlay-an-6">
+                            <p>Realizando um de seus sonhos </p>
+                        </div></a></li>
+                        <li class="content-an-7" onmouseover="addOverlay('.content-an-7', '.overlay-an-7')"><img src="../img/momentos3.png" alt="" width="160px" height="160px"><div class="overlay-an-7">
+                            <p>Foto de um, dos nossos melhores dias juntos </p>
+                        </div></a></li>
+                        <li class="content-an-8" onmouseover="addOverlay('.content-an-8', '.overlay-an-8')"><img src="../img/segundo_carnaval.png" alt="" width="160px" height="160px"><div class="overlay-an-8">
+                            <p>Nosso segundo carnaval juntos </p>
+                        </div></a></li>
+                        <li class="content-an-9" onmouseover="addOverlay('.content-an-9', '.overlay-an-9')"><img src="../img/momentos4.png" alt="" width="160px" height="160px"><div class="overlay-an-9">
+                            <p>Um de nossos piores momentos </p>
+                        </div></a></li>
+                        <li class="content-an-10" onmouseover="addOverlay('.content-an-10', '.overlay-an-10')"><img src="../img/momentos5.png" alt="" width="160px" height="160px"><div class="overlay-an-10">
+                            <p>Um rolezinho qualquer </p>
+                        </div></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-texto">
+            <p>Feliz aniversário meu amor</p><br>
+            <p>Desenvolvido por <a href="https://www.instagram.com/_rafaelmelol/" target="_blank">Rafael Melo</a></p>
+        </div>
+        
+    </footer>
+
+
+    
+
+    <script src="../js/app-perfil-raquel.js"></script>
+</body>
+</html> I created a website for my girlfriend, inspired by Netflix and renamed it "Rachel Flix".
